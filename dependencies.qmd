@@ -1,0 +1,35 @@
+---
+title: "Dependences"
+format: gfm
+---
+```{r}
+#| include: FALSE
+script_files <- list.files("scripts",recursive = T,full.names = T ,pattern = ".R|.r")
+
+lib_list <- list()
+
+for (i in seq(script_files)) {
+
+    lib_list[[i]] <- c(grep("library", readLines(script_files[i]), value = TRUE),
+      grep("require", readLines(script_files[i]), value = TRUE),
+      grep("source_url", readLines(script_files[i]), value = TRUE))
+
+}
+
+eval(parse(text = unique(unlist(lib_list))))
+
+```
+
+list of libraries, and other code sources:
+```{r}
+#| echo: FALSE
+
+sort(unique(unlist(lib_list)))
+```
+
+R session info:
+```{r}
+#| echo: FALSE
+
+sessionInfo()
+```
