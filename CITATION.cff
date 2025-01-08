@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+authors:
+- family-names: Kaláb
+  given-names: Oto
+  affiliation: Department of Physical Geography and Geoecology, Faculty of Science, University of Ostrava
+  orcid: 0000-0003-3485-9377
+- family-names: Holuša
+  given-names: Jaroslav
+  affiliation: Faculty of Forestry and Wood Sciences, Czech University of Life Sciences
+  orcid: 0000-0003-1459-0331
+title: "The habitat-suitability models of the European mole cricket (Gryllotalpa gryllotalpa) as information tool for conservation and pest management"
+doi: 10.1016/j.heliyon.2023.e14826
+type: article
+publisher: Heliyon
+issue: 9
+volume: 4
+number: e14826
+year: 2023
+
